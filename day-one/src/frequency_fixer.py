@@ -7,7 +7,7 @@ def parse_frequencies(filename: str) -> [int]:
         frequencies = map(lambda x: int(x[:-1]),
                           frequency_changes)
         frequencies_list = list(frequencies)
-    return list(frequencies_list)
+    return frequencies_list
 
 
 def answer_function_part_one(filename: str) -> int:
