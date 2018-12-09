@@ -29,9 +29,10 @@ def answer_function_part_two(filename: str) -> int:
 
 
 if __name__ == '__main__':
-    FILENAME = 'input.txt'
+    FILENAME = '../data/input.txt'
     answer_first = answer_function_part_one(FILENAME)
     answer_second = answer_function_part_two(FILENAME)
 
     print(f'First answer: {answer_first}')
     print(f'Second answer: {answer_second}')
+
