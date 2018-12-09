@@ -19,10 +19,14 @@ def answer_function_part_two(filename: str) -> int:
         occurrences = defaultdict(int)
         frequencies = map(lambda x: int(x[:-1]),
                           frequency_changes)
-        list(it.takewhile(lambda frequency_change: is_repeated(occurrences, frequency_change),
+        list(it.takewhile(lambda frequency: is_repeated(occurrences,
+                                                        frequency),
                           it.accumulate(it.chain([0], it.cycle(frequencies)))))
-        answer_second = [key for key, value in occurrences.items() if value == 2][0]
+        answer_second = [key
+                         for key, value in occurrences.items()
+                         if value == 2][0]
     return answer_second
+
 
 if __name__ == '__main__':
     FILENAME = 'input.txt'
