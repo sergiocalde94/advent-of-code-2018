@@ -50,7 +50,7 @@ def get_manhattan_distance_dict(
         ignore_filled_positions: bool = True) -> collections.defaultdict:
     manhattan_distance_dict = collections.defaultdict(list)
     for index, value in np.ndenumerate(board):
-        if not value or ignore_filled_positions == False:
+        if not value or not ignore_filled_positions:
             for position in positions:
                 manhattan_distance_dict[index].append(
                     dict(

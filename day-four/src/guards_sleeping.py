@@ -3,7 +3,6 @@ import datetime
 import functools as ft
 import pandas as pd
 
-
 REGEX_PARSE = r'\[\d+-(\d+-\d+ \d+:\d+)\] Guard #(\d+) (.*)'
 REGEX_PARSE_NO_GUARD = r'\[\d+-(\d+-\d+ \d+:\d+)\] (.*)'
 

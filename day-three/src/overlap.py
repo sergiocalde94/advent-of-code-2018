@@ -4,7 +4,6 @@ import numpy as np
 import itertools as it
 import functools as ft
 
-
 Position = collections.namedtuple('Position',
                                   ['id', 'x', 'y', 'width', 'height'])
 REGEX_PARSE = r'#(\d+) @ (\d+),(\d+): (\d+)x(\d+)'
